@@ -1,0 +1,17 @@
+.tab1{
+    box-align: center;
+    
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+    margin: 50px 300px 50px 300px
+}
+.t1{
+    margin: 10px 10px 10px 10px;
+}
+.alignt {
+    text-align: right;
+}

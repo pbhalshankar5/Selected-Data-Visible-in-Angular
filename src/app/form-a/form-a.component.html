@@ -1,0 +1,44 @@
+<div class="container">
+    
+    <div class="row">
+        <form class="center">
+            <div class="row">
+                
+                <table class="tab1">
+                    <tr><h3><u class="alignt">Form using Dropdown</u></h3></tr>
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" id="firstName" name="firstName" placeholder="Enter your Firstname" class="form-control"></td>
+                        <td><input type="text" id="lastName" name="lastName" placeholder="Enter your Lastname" class="form-control"></td>
+                    </tr>
+                    <tr>  
+                        <td><label for="selectOption" class="left">How Should We Contact You?</label></td>
+                        <td *ngIf="Option === 'phoneNumber'"><label for="phoneNumber">Phone Address</label></td>
+                        <td *ngIf="Option === 'email'"><label class="left" for="emailAddress">Email Address</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <select name="selectOption" id="selectOption" [(ngModel)]="Option" >
+                        <option value="">Choose Option</option>
+                        <option value="phoneNumber">Phone Address</option>
+                        <option value="email">Email Address</option>
+                        </select>
+                       </td>
+                       <td *ngIf="Option === 'phoneNumber'">
+                        <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber" class="form-control">
+                       </td>
+                       <td *ngIf="Option === 'email'">
+                        <input type="text" id="email" name="email" [(ngModel)]="emailId" class="form-control">
+                       </td>
+                    </tr>
+                <tr class="alignt"><button>Submit</button></tr>
+                </table>
+                
+            </div>
+        </form>
+    </div>
+    
+</div>
